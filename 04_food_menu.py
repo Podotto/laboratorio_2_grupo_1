@@ -33,14 +33,38 @@ def main():
         match burger_type:
           case 1: 
             print("Añadiste una hamburguesa de carne.")
-          
+            
           case 2:
             print("Añadiste una hamburguesa de pollo.")
             
           case _:
             print("No es una opción válida.")
       
-      
+      # Caso 2
+      case 2:
+        print("¿Qué salsa quieres?")
+        print("1. BBQ\n2. Ranch\n3. Honey Mustard\n4. Buffalo\n5. Ninguna")
+        
+        sauce = int(input("Escoge una opción: "))
+        
+        match sauce:
+          case 1: 
+            print("Añadiste nuggets con salsa BBQ.")
+          
+          case 2:
+            print("Añadiste nuggets con salsa ranch.")
+            
+          case 3:
+            print("Añadiste nuggets con salsa honey mustard")
+            
+          case 4:
+            print("Añadiste nuggets con salsa buffalo.")  
+          
+          case 5:
+            print("Añadiste nuggets sin salsa.")  
+            
+          case _:
+            print("No es una opción válida.")  
       
       #Caso 6
       case 6:
