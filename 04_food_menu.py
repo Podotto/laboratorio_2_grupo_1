@@ -12,5 +12,8 @@ def main():
   print("5. Soda")
   print("6. Sundae")
   
+  # Selección del usuario
+  option = int(input("¿Qué le gustaría añadir a su orden?: "))
+  
 
 main()
