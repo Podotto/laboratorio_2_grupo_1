@@ -23,7 +23,7 @@ def main():
         print("1. Hamburguesa de carne")
         print("2. Hamburguesa de pollo")
         
-        burger_type = int(input("Escoje una opción: "))
+        burger_type = int(input("Escoge una opción: "))
         
         match burger_type:
           case 1: 
@@ -67,7 +67,7 @@ def main():
         
       # Caso 4
       case 4:
-        print("¿Qué sabor de soda quieres: ")
+        print("¿Qué sabor de soda quieres?: ")
         print("1. Coca Cola\n2. Pepsi\n3. Sprite\n4. Kist Naranja\n5. Kist Fresa")
         
         soda = int(input("Escoge una opción: "))
@@ -90,7 +90,27 @@ def main():
             
           case _:
             print("No es una opción válida.") 
-             
+      
+      # Caso 5
+      case 5:
+        print("¿Qué tipo de sundae quieres?: ")
+        print("1. Chocolate\n2. Caramelo\n3. Fresa")
+        
+        sundae = int(input("Escoge una opción: "))
+        
+        match sundae:
+          case 1: 
+            print("Añadiste un sundae de chocolate.")
+          
+          case 2:
+            print("Añadiste un sundae de caramelo.")
+            
+          case 3:
+            print("Añadiste un sundae de fresa.")
+            
+          case 4:
+            print("No es una opción válida")
+                   
       # Caso 6
       case 6:
         print("Hemos tomado tu orden. Por favor pasa a ventanilla para pagar.")  
