@@ -4,17 +4,12 @@ def main():
   print("Bievenido/a al restaurante Byte Bites")
   print("======================================")
   
-  #Menú de Opciones
-  print("1. Hamburguesa")
-  print("2. Nuggets")
-  print("3. Papas fritas")
-  print("4. Soda")
-  print("5. Sundae")
-  print("6. Terminar")
-  
   #Bucle
   option = 0
   while option != 6:
+    
+    #Menú de Opciones
+    print("1. Hamburguesa\n2. Nuggets\n3. Papas fritas\n4. Soda\n5. Sundae\n6. Terminar")
   
     # Selección del usuario
     option = int(input("¿Qué te gustaría añadir a tu orden?: "))
