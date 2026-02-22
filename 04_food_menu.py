@@ -65,6 +65,32 @@ def main():
       case 3:
         print("Añadiste papas fritas.")
         
+      # Caso 4
+      case 4:
+        print("¿Qué sabor de soda quieres: ")
+        print("1. Coca Cola\n2. Pepsi\n3. Sprite\n4. Kist Naranja\n5. Kist Fresa")
+        
+        soda = int(input("Escoge una opción: "))
+        
+        match soda:
+          case 1: 
+            print("Añadiste una soda Coca Cola.")
+          
+          case 2:
+            print("Añadiste una soda Pepsi.")
+            
+          case 3:
+            print("Añadiste una soda Sprite.")
+            
+          case 4:
+            print("Añadiste una soda Kist Naranja.")  
+          
+          case 5:
+            print("Añadiste una soda Kist Fresa.")  
+            
+          case _:
+            print("No es una opción válida.") 
+             
       # Caso 6
       case 6:
         print("Hemos tomado tu orden. Por favor pasa a ventanilla para pagar.")  
