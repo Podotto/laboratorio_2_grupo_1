@@ -59,9 +59,13 @@ def main():
             print("Añadiste nuggets sin salsa.")  
             
           case _:
-            print("No es una opción válida.")  
-      
-      #Caso 6
+            print("No es una opción válida.") 
+            
+      # Caso 3
+      case 3:
+        print("Añadiste papas fritas.")
+        
+      # Caso 6
       case 6:
         print("Hemos tomado tu orden. Por favor pasa a ventanilla para pagar.")  
 
