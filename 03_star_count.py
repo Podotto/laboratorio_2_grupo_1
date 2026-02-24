@@ -4,7 +4,4 @@ def main():
     for _ in range(1, stars + 1):
         print("*")
 
-
-if __name__ == "__main__":
-    while True:
-        main()
+main()
