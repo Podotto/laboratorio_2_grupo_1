@@ -1,8 +1,8 @@
 def main():
   
   # Bienvenida
-  print("Bievenido/a al restaurante Byte Bites")
-  print("======================================")
+  print("😋🍽️  Bievenido/a al restaurante Byte Bites 🍽️😋")
+  print("===========================================")
   
   # Lista para guardar las ordenes
   order = []
@@ -12,7 +12,7 @@ def main():
   while option != 6:
     
     #Menú de Opciones
-    print("1. Hamburguesa\n2. Nuggets\n3. Papas fritas\n4. Soda\n5. Sundae\n6. Terminar")
+    print("1. Hamburguesa 🍔\n2. Nuggets 🧽\n3. Papas fritas 🍟\n4. Soda 🥤\n5. Sundae 🍦\n6. Terminar")
   
     # Selección del usuario
     option = int(input("¿Qué te gustaría añadir a tu orden?: "))
