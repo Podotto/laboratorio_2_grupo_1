@@ -1,11 +1,11 @@
 def main():
-    age = int(input("ingrese su edad:"))
+    age = int(input("Ingrese su edad: "))
     
     if age>=18:
-     print("Eres un adulto felicidades eres mayor de edad")
+     print("Eres un adulto. ¡Felicidades! Eres mayor de edad")
      
     else:
-      print("Eres un niño lamentable eres menor de edad")   
+      print("Eres un niño. Lamentable eres menor de edad")   
 main()     
     
     
