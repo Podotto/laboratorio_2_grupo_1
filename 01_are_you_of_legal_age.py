@@ -11,7 +11,4 @@ def main():
     else:
         print("Eres un niño. Lamentable eres menor de edad")
 
-
-if __name__ == "__main__":
-    while True:
-        main()
+main()
