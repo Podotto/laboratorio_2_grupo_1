@@ -4,6 +4,9 @@ def main():
     if age>=18:
      print("Eres un adulto. ¡Felicidades! Eres mayor de edad")
      
+    elif age < 0:
+      print("Error. Edad no válida.")
+     
     else:
       print("Eres un niño. Lamentable eres menor de edad")   
 main()     
