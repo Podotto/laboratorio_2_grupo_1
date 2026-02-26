@@ -4,6 +4,9 @@ def main():
   print("Bievenido/a al restaurante Byte Bites")
   print("======================================")
   
+  # Lista para guardar las ordenes
+  order = []
+  
   #Bucle
   option = 0
   while option != 6:
@@ -28,9 +31,11 @@ def main():
         match burger_type:
           case 1: 
             print("Añadiste una hamburguesa de carne.")
+            order = order + ["Hamburguesa de carne"]
             
           case 2:
             print("Añadiste una hamburguesa de pollo.")
+            order = order + ["Hamburguesa de pollo"]
             
           case _:
             print("No es una opción válida.")
@@ -45,18 +50,23 @@ def main():
         match sauce:
           case 1: 
             print("Añadiste nuggets con salsa BBQ.")
+            order = order + ["Nuggets con salsa BBQ"]
           
           case 2:
             print("Añadiste nuggets con salsa ranch.")
+            order = order + ["Nuggets con salsa ranch"]
             
           case 3:
             print("Añadiste nuggets con salsa honey mustard")
+            order = order + ["Nuggets con salsa honey mustard"]
             
           case 4:
-            print("Añadiste nuggets con salsa buffalo.")  
+            print("Añadiste nuggets con salsa buffalo.")
+            order = order + ["Nuggets con salsa buffalo"]  
           
           case 5:
-            print("Añadiste nuggets sin salsa.")  
+            print("Añadiste nuggets sin salsa.")
+            order = order + ["Nuggets sin salsa"]  
             
           case _:
             print("No es una opción válida.") 
@@ -64,6 +74,7 @@ def main():
       # Caso 3
       case 3:
         print("Añadiste papas fritas.")
+        order = order + ["Papas fritas"]
         
       # Caso 4
       case 4:
@@ -75,18 +86,23 @@ def main():
         match soda:
           case 1: 
             print("Añadiste una soda Coca Cola.")
+            order = order + ["Soda Coca Cola"]
           
           case 2:
             print("Añadiste una soda Pepsi.")
+            order = order + ["Soda Pepsi"]
             
           case 3:
             print("Añadiste una soda Sprite.")
+            order = order + ["Soda Sprite"]
             
           case 4:
-            print("Añadiste una soda Kist Naranja.")  
+            print("Añadiste una soda Kist Naranja.")
+            order = order + ["Soda Kist Naranja"]  
           
           case 5:
-            print("Añadiste una soda Kist Fresa.")  
+            print("Añadiste una soda Kist Fresa.")
+            order = order + ["Soda Kist Fresa"]  
             
           case _:
             print("No es una opción válida.") 
@@ -101,18 +117,24 @@ def main():
         match sundae:
           case 1: 
             print("Añadiste un sundae de chocolate.")
+            order = order + ["Sundae de chocolate"]
           
           case 2:
             print("Añadiste un sundae de caramelo.")
+            order = order + ["Sundae de caramelo"]
             
           case 3:
             print("Añadiste un sundae de fresa.")
+            order = order + ["Sundae de fresa"]
             
           case 4:
             print("No es una opción válida")
                    
       # Caso 6
       case 6:
-        print("Hemos tomado tu orden. Por favor pasa a ventanilla para pagar.")  
+        print("Hemos tomado tu orden. Tu orden completa es:")
+        for item in order:
+          print("-", item)
+          
 
 main()
